@@ -4,11 +4,8 @@
 package nutritionmanagement;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Person p = new Elderly("John", new Active());
+        System.out.println(p.description());
     }
 }
