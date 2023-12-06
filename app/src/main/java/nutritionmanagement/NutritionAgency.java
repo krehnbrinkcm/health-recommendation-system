@@ -27,7 +27,7 @@ public class NutritionAgency implements Subject{
 
         
         elderlyDietReccomendation = "calcium";
-        adultDietReccomendation = "protien";
+        adultDietReccomendation = "protein";
         teenDietReccomendation = "carbs";
         childDietReccomendation = "milk";
 
