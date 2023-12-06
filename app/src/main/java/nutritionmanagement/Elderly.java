@@ -4,7 +4,7 @@ public class Elderly extends Person implements Observer{
 
     //constructor
     public Elderly(String name, ActivityLevel activityLevel, NutritionAgency na) {
-        super(name, activityLevel, "old", "");
+        super(name, activityLevel, "elderly", "calcium");
         na.registerObserver(this);
     }    
 
@@ -12,6 +12,6 @@ public class Elderly extends Person implements Observer{
     @Override
     public void update(Subject o, Object args) {
         NutritionAgency nutritionAgency = (NutritionAgency) o;
-        this.dietReccomendation = nutritionAgency.getElderlyDietReccomendation();
+        this.setDietReccomendation(nutritionAgency.getElderlyDietReccomendation());
     }
 }

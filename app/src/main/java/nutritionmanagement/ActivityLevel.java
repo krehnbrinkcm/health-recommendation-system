@@ -12,11 +12,17 @@ public abstract class ActivityLevel {
         this.reccomendedCalories = reccomendedCalories;
     }
 
+    //getters
     public String getActivityLevelName() {
         return activityLevelName;
     }
 
     public int getReccomendedCalories() {
         return reccomendedCalories;
+    }
+
+    //setter
+    public void setReccomendedCalories(int rc) {
+        reccomendedCalories = rc;
     }
 }

@@ -4,9 +4,9 @@ public abstract class Person {
 
     //fields
     private ActivityLevel activityLevel;
-    String name;
-    String ageName;
-    String dietReccomendation;
+    private String name;
+    private String ageName;
+    private String dietReccomendation;
     
     //constructor
     public Person(String name, ActivityLevel activityLevel, String ageName, String dietReccomendation) {
@@ -33,8 +33,14 @@ public abstract class Person {
         return dietReccomendation;
     }
 
+    //setter
+
+    public void setDietReccomendation(String dietReccomendation) {
+        this.dietReccomendation = dietReccomendation;
+    }
+
     //description method
     public String description() {
-        return String.format("%s is an %s %s person so they shoul get %d calories and eat %s in their diet.",name, activityLevel.getActivityLevelName(), ageName,  activityLevel.getReccomendedCalories(), dietReccomendation);
+        return String.format("%s is an %s %s so they should get %d calories and eat %s in their diet.",name, activityLevel.getActivityLevelName(), ageName,  activityLevel.getReccomendedCalories(), dietReccomendation);
     }
 }
