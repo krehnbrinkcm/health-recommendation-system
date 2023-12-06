@@ -5,7 +5,11 @@ package nutritionmanagement;
 
 public class App {
     public static void main(String[] args) {
-        Person p = new Elderly("John", new Active());
+        NutritionAgency nutritionAgency = new NutritionAgency();
+        Person p = new Elderly("John", new Active(),nutritionAgency);
+        System.out.println(p.description());
+        nutritionAgency.setElderlyDietReccomendation("lots of bread");
+        nutritionAgency.setElderlyDietReccomendation("broccoli");
         System.out.println(p.description());
     }
 }

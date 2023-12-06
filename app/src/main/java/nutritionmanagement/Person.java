@@ -35,6 +35,6 @@ public abstract class Person {
 
     //description method
     public String description() {
-        return String.format("%s is an %s %s person so they shoul get %d calories and get %s from their diet.",name, activityLevel.getActivityLevelName(), ageName,  activityLevel.getReccomendedCalories(), dietReccomendation);
+        return String.format("%s is an %s %s person so they shoul get %d calories and eat %s in their diet.",name, activityLevel.getActivityLevelName(), ageName,  activityLevel.getReccomendedCalories(), dietReccomendation);
     }
 }
